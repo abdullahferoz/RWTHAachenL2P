@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TaskPlaner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="taskdivider_name">Divide Task</string>
+	<string name="MainTasks">Al available tasks</string>
+	
+</resources>

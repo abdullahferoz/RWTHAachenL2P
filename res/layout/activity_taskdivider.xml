@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#006799" >
+
+    <requestFocus />
+    
+     <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/textView3" >
+
+         <RadioButton
+             android:id="@+id/radio0"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:checked="true"
+             android:text="Set Reminder"
+             android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divide into subtasks"
+                android:textColor="#ffffff" />
+           
+        </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_marginTop="28dp"
+        android:stretchColumns="0,1,2"
+        android:layout_below="@+id/radioGroup1" >
+    	<TableRow
+	        android:id="@+id/tableRow1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="14dp"
+	        android:layout_weight="1" >
+    	</TableRow>
+   </TableLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginLeft="22dp"
+        android:onClick="btn_click"
+        android:text="Add subtask"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn"
+        android:layout_alignBottom="@+id/btn"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:onClick="btn_save"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Assignment1"
+        android:textColor="#ffffff"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="#ffffff" />
+    
+</RelativeLayout>

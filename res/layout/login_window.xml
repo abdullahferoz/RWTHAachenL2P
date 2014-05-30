@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#006799"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <TextView
+        android:id="@+id/welcometv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:paddingBottom="10dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/welcometexttv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Welcome to L2P Mobile App. To access your current tasks kidnly login below:"
+           android:paddingBottom="20dp"
+           android:textColor="#ffffff"
+           android:textColorLink="#ffffff" />
+
+       <TextView
+           android:id="@+id/usernametexttv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Username"
+           android:paddingBottom="5dp"
+           android:textColor="#ffffff" />
+
+       <EditText
+           android:id="@+id/usernametxt"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:background="#ffffff"
+           android:ems="10" >
+		   
+           <requestFocus />
+       </EditText>
+
+       <TextView
+           android:id="@+id/passwordtexttv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingTop="10dp"
+           android:paddingBottom="5dp"
+           android:text="Password"
+           android:textColor="#ffffff" />
+
+       <EditText
+           android:id="@+id/passwordtxt"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:background="#ffffff"
+           android:ems="10"
+           android:inputType="textPassword" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="30dp"
+           android:orientation="vertical" >
+
+           <Button
+               android:id="@+id/imagebuttonlogin"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:onClick="imagebuttonlogin_clicked"
+               android:text="Login"
+               android:textColor="@android:color/white" 
+               />
+
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/errottv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:textColor="#ffffff" />
+    
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#006799"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:onClick="onCheckBoxClicked"
+        android:text=" Task 2"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Assignment 1"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="35dp"
+        android:onClick="onCheckBoxClicked"
+        android:text=" Task 1"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="0% Completed"
+        android:textColor="#ffffff" />
+</RelativeLayout>
